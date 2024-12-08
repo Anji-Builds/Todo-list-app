@@ -12,7 +12,10 @@ const Form = ({input, setInput, todos, setTodos }) => {
     };
   return (
     <form onSubmit={onFormSubmit}>
-        <input type="text" placeholder="Enter a Task" className="task-input" 
+        <input 
+        type="text" 
+        placeholder="Enter a Task" 
+        className="task-input" 
         value={input} 
         required 
         onChange={onInputChange}

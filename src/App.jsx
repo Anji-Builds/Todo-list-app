@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Header from "./components/Header"
 import Form from './components/Form';
+import Todoslist from './components/Todoslist';
 import './App.css';
 
 const App = () => {
@@ -20,7 +21,11 @@ const App = () => {
             todos = {todos}
             setTodos = {setTodos}
           />
-        </div>     
+        </div> 
+        <div>
+          <Todoslist todos={todos} setTodos={setTodos} />
+        
+        </div>    
       </div>     
     </div>
   );
